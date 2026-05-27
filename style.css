@@ -1,0 +1,490 @@
+@charset "UTF-8";
+body{
+    line-height: 1.7;
+    font-size: 32px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400%;
+    font-style: normal;
+    color: #ffa76c;
+    margin: 0;
+    padding: 0;
+}    
+@media screen and (max-width:767px){
+    body{
+        font-size: 16px;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .gnav{
+        font-size: 16px;
+        margin-top: -20px;
+    }
+}
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: #ffa76c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 1.5s 2.5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading__logo {
+  opacity: 0;
+  animation: logo_fade 2s 0.5s forwards;
+  width: 200px;
+}
+
+@keyframes logo_fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+/*header*/
+.home header{
+    margin: 0;
+    padding: 0;
+    background-color: #ffa76c;
+    padding-bottom: 50px;
+}
+h1{
+    margin: 0;
+}
+header h1 a img{
+    position:fixed;
+    padding: 1%;
+    animation: fuwafuwa 3s ease-in-out infinite alternate;
+    display: inline-block;
+    transition: 1.5s ease-in-out;
+     margin-top: 15px;
+}
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+body{
+      background-image:
+    repeating-linear-gradient(to bottom,
+      transparent 25px,
+      rgb(255, 145, 72) 26px,  rgb(255, 145, 72) 26px,
+      transparent 27px,  transparent 51px, 
+      rgb(255, 145, 72) 52px,  rgb(255, 145, 72) 52px,
+      transparent 53px,  transparent 77px, 
+      rgb(255, 145, 72) 78px,  rgb(255, 145, 72) 78px,
+      transparent 79px,  transparent 103px, 
+      rgb(255, 145, 72) 104px,  rgb(255, 145, 72)104px,
+      transparent 105px,  transparent 129px, 
+      rgb(255, 145, 72) 130px,  rgb(255, 145, 72) 130px),
+  
+    repeating-linear-gradient(to right,
+      transparent 25px,
+      rgb(255, 145, 72) 26px,  rgb(255, 145, 72) 26px,
+      transparent 27px,  transparent 51px, 
+      rgb(255, 145, 72) 52px,  rgb(255, 145, 72) 52px,
+      transparent 53px,  transparent 77px, 
+      rgb(255, 145, 72) 78px,  rgb(255, 145, 72) 78px,
+      transparent 79px,  transparent 103px, 
+      rgb(255, 145, 72) 104px,  rgb(255, 145, 72)104px,
+      transparent 105px,  transparent 129px, 
+      rgb(255, 145, 72) 130px,  rgb(255, 145, 72) 130px);
+}
+header .top{
+    width: 100%;
+}
+header .gnav{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background-color: #344782;
+    padding: 1%;
+    border: 5px solid white;
+    border-radius: 40px ;
+}
+header .gnav ul{
+    list-style-type: none;
+    padding: 0 3% 0 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+}
+header .gnav ul li{
+    margin: 1em;
+}
+header .gnav ul li a{
+    display: flex;
+    padding: 8%;
+    color: white;
+    align-items: center;
+}
+header .gnav ul li a:hover{
+    color: #ffa76c;
+}
+body header .visual p img{
+    width: 50%;
+    margin: 30px auto;
+    display: block;
+    background-color: #ffffff7c;
+    padding: 100px 140px;
+    background-image:
+    repeating-linear-gradient(to bottom,
+      transparent 25px,
+      rgb(255, 255, 255) 26px,  rgb(255, 255, 255) 26px,
+      transparent 27px,  transparent 51px, 
+      rgb(255, 255, 255) 52px,  rgb(255, 255, 255) 52px,
+      transparent 53px,  transparent 77px, 
+      rgb(247, 247, 247) 78px,  rgb(255, 255, 255) 78px,
+      transparent 79px,  transparent 103px, 
+      rgb(255, 255, 255) 104px,  rgb(255, 255, 255)104px,
+      transparent 105px,  transparent 129px, 
+      rgb(255, 255, 255) 130px,  rgb(255, 255, 255) 130px),
+  
+    repeating-linear-gradient(to right,
+      transparent 25px,
+      rgb(255, 255, 255) 26px,  rgb(255, 255, 255) 26px,
+      transparent 27px,  transparent 51px, 
+      rgb(255, 255, 255) 52px,  rgb(255, 255, 255) 52px,
+      transparent 53px,  transparent 77px, 
+      rgb(255, 255, 255) 78px,  rgb(255, 255, 255) 78px,
+      transparent 79px,  transparent 103px, 
+      rgb(255, 255, 255) 104px,  rgb(255, 255, 255)104px,
+      transparent 105px,  transparent 129px, 
+      rgb(255, 255, 255) 130px,  rgb(255, 255, 255) 130px);
+    border-radius: 150px 150px 150px 150px ;
+    box-sizing: border-box;
+    border-color: white;
+    background-size: 150% 150%;
+    border: solid 30px#ffffff;
+}
+@media screen and (max-width:767px){
+.home header{
+    padding-bottom: 1px;
+}
+body header .visual p img{
+    width: 90%;
+    margin: 20px;
+    background-color: #ffffff7c;
+    padding: 50px 70px;
+    border-radius: 50px;
+    background-size: 150% 150%;
+    border: solid 15px#ffffff;
+    }
+}
+/*main*/
+main{
+    margin: 0;
+    padding: 2%;
+}
+body .inner .name{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 30px#ffa76c;
+    border-radius: 150px 150px 150px 150px ;
+    margin: 50px;
+}
+body .inner .name p img{
+    
+  position: relative;
+}
+
+body .inner .name h2{
+    border-bottom: solid 8px #ffa76c;
+    margin-bottom: 0;
+}
+body .inner .name h4{
+    margin-top: 0;
+}
+body main .inner .profile{
+    text-align: center;
+}
+
+body main .inner .profile th{
+    border-right:dashed 5px #ffa76c;
+    text-align: right;
+    padding-right: 20px;
+}
+td{
+    padding-left: 40px;
+}
+.skille{
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 30px#ffa76c;
+    border-radius: 150px 150px 150px 150px ;
+    margin: 50px;
+}
+.skille th{
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.skille td{
+    font-size: 8px;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+}
+.skille img{
+    margin: 0 4px;
+}
+.news{
+    text-align: center;
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 30px#ffa76c;
+    border-radius: 150px 150px 150px 150px ;
+    margin: 50px;
+}
+.news dl{
+    display: flex;
+    justify-content: center;
+    color: #344782;
+    font-weight: bold;
+    font-size: 80%;
+}
+.news dt::after{
+    content: ":";
+    margin-left: 30px;
+    font-weight: bold;
+}
+@media screen and (max-width:767px){
+body .inner .name{
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 15px#ffa76c;
+    border-radius: 50px;
+    margin: 16px;
+    display: block;
+    text-align: center;
+}
+body main .inner .profile table{
+    margin: 0 auto;
+}
+body main .inner p img{
+    padding: 0 20px;
+}
+.skille{
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 15px#ffa76c;
+    border-radius: 50px;
+    margin: 16px;
+    display: block;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+.news{
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 15px#ffa76c;
+    border-radius: 50px;
+    margin: 16px;
+    display: block;
+    text-align: center;
+}
+.skille td img{
+    font-size: 8px;
+    text-align: center;
+}
+.news dt::after{
+    margin-left: 5px;
+}
+}
+/*footer*/
+footer{
+    background-color: #ffa76c;
+    margin: 0;
+    padding: 5%;
+    text-align: center;
+}
+footer p{
+    color: white;
+}
+footer img{
+    width: 10%;
+}
+/*work*/
+.art{
+    font-size: 30px;
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 30px#ffa76c;
+    border-radius: 150px 150px 150px 150px ;
+    margin: 50px;
+}
+.works{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item{
+    width: 20%;
+    padding: 6% 3% 7%;
+    margin: 15px 15px 0px;
+
+}
+.item{
+    position: relative;
+}
+.overlay{
+    border-radius: 40px;
+    position: absolute;
+    inset: 0;
+    background: #34488271;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    padding: 10px;
+}
+.item:hover .overlay{
+    opacity: 1;
+}
+.overlay span{
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:767px){
+.art{
+    font-size: 16px;
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 15px#ffa76c;
+    border-radius: 50px;
+    margin: 16px;
+    margin-top: 56px;
+}
+.overlay{
+    font-size: 50%;
+    border-radius: 10px;
+    position: absolute;
+    inset: 0;
+    background: #34488271;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    padding: 10px;
+}
+.item:hover .overlay{
+    opacity: 1;
+}
+.overlay span{
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+}
+}
+/*contact*/
+.account{
+    text-align: center;
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 30px#ffa76c;
+    border-radius:150px;
+    margin: 50px;
+}
+.account h2{
+    text-align: left;
+}
+.contact{
+    text-align: center;
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 30px#ffa76c;
+    border-radius:150px;
+    margin: 50px;
+}
+.contact h2{
+    text-align: left;
+}
+textarea{
+    padding: 0;
+}
+h4 img{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+h5 img{
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+}
+.box img {
+  animation: rotation 8s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width:767px){
+.account{
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 15px#ffa76c;
+    border-radius: 50px;
+    margin: 16px;
+    margin-top: 56px;
+}
+.contact{
+    padding: 5%;
+    background-color: #ffffff88;
+    border: solid 15px#ffa76c;
+    border-radius: 50px;
+    margin: 16px;
+    margin-top: 56px;
+}
+.contact dd{
+    margin: 1%;
+}
+}
