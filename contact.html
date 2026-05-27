@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/normalize.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <mata name="description" content="林崎明佳のポートフォリオ"></mata>
+        <title>contact</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html"><img src="img/SVG/logo.svg" alt="portforio" width="20%"></a></h1>
+            <div class="top2">
+                <img src="img/yane2.png" width="100%">
+            </div>
+            <nav class="gnav">
+                <ul>
+                    <li><a href="index.html" target="_blank">Profile</a></li>
+                    <li><a href="work.html" target="_blank">Work</a></li>
+                    <li><a href="contact.html" target="_blank">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="box">
+                <h4><img src="img/img1.png" width="10%"></h4>
+                <h5><img src="img/img2.png" width="10%"></h5>
+            </div>
+            <div class="account">
+                <h2>SNS</h2>
+                <p><a href="https://www.instagram.com/"><img src="img/Instagram_Glyph_Gradient.png" width="10%"></a></p>
+            </div>
+            <div class="contact">
+                <h2>CONTACT</h2>
+                <form action="program.php" method="post">
+                    <dl>
+                    <label>
+                        <dt>お名前<span crass="must">※</span></dt>
+                            <dd>
+                                    <input type="text" name="name" required placeholder="田中太郎">
+                            </dd>
+                    </label>
+                    <label>
+                        <dt>ふりがな<span crass="must">※</span></dt>
+                        <dd>
+                            <input type="text" name="name" required placeholder="たなかたろう">
+                        </dd>
+                    </label>
+                    <label>
+                        <dt>メールアドレス<span crass="must">※</span></dt>
+                        <dd>
+                            <input type="text" name="email" required placeholder="sample@test.com">
+                        </dd>
+                    </label>
+                    <label>
+                        <dt>電話番号</dt>
+                        <dd>
+                            <input type="tel" name="tel">
+                        </dd>
+                    </label>
+                        <dt>どこでお知りになりましたか？</dt>
+                        <dd>
+                            <textarea name="comment" cols="20" rows="5"></textarea>
+                        </dd>
+                        <dt>お問い合わせ・ご質問内容</dt>
+                        <dd>
+                            <textarea name="comment" cols="20" rows="5"></textarea>
+                        </dd>
+                    </dl>
+                    <p class="submit">
+                        <input type="submit" name="submit" value="送信する">
+                        <input type="reset" name="reset" value="リセット">
+                    </p>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <img src="img/SVG/logo.svg" alt="logo">
+            <copylight><p><small>&copy; 2026 林崎明佳のportforio</small></p></copylight>
+        </footer>
+    </body>
+</html>
